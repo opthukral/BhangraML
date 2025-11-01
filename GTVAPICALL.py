@@ -8,9 +8,6 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
 
-DEFAULT_API_KEY = "AIzaSyAJrTrfI7Khfe4gtjDOkSqLFXthKB8L3nw"
-
-
 def get_youtube_client():
     api_key = os.getenv("YOUTUBE_API_KEY", DEFAULT_API_KEY).strip()
     if not api_key:
